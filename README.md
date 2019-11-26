@@ -54,7 +54,7 @@ func main() {
 
     // Wrap your "router" with the methodoverride wrapper. 
     http.ListenAndServe(":8080", mo(router))
-    }
+}
 
 ```
 
