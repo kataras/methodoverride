@@ -235,11 +235,12 @@ func Query(paramName string) Option {
 // to determinate the method to override with.
 //
 // Use cases:
-// 1. When need to check only for headers and ignore other fields:
-//   New(Only(Headers("X-Custom-Header")))
 //
-// 2. When need to check only for (first) form field and (second) custom getter:
-//   New(Only(FormField("fieldName"), Getter(...)))
+//  1. When need to check only for headers and ignore other fields:
+//     New(Only(Headers("X-Custom-Header")))
+//
+//  2. When need to check only for (first) form field and (second) custom getter:
+//     New(Only(FormField("fieldName"), Getter(...)))
 func Only(o ...Option) Option {
 	return func(opts *options) {
 		opts.getters = opts.getters[0:0]

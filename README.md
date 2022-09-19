@@ -1,16 +1,16 @@
 # HTTP Method Override (Go)
 
-[![build status](https://img.shields.io/travis/kataras/methodoverride/master.svg?style=for-the-badge)](https://travis-ci.org/kataras/methodoverride) [![report card](https://img.shields.io/badge/report%20card-a%2B-ff3333.svg?style=for-the-badge)](https://goreportcard.com/report/github.com/kataras/methodoverride) [![godocs](https://img.shields.io/badge/go-%20docs-488AC7.svg?style=for-the-badge)](https://godoc.org/github.com/kataras/methodoverride) [![donate on PayPal](https://img.shields.io/badge/support-PayPal-blue.svg?style=for-the-badge)](https://www.paypal.me/kataras)
+[![build status](https://img.shields.io/github/workflow/status/kataras/methodoverride/CI/master?style=for-the-badge)](https://github.com/kataras/methodoverride/actions) [![report card](https://img.shields.io/badge/report%20card-a%2B-ff3333.svg?style=for-the-badge)](https://goreportcard.com/report/github.com/kataras/methodoverride) [![godocs](https://img.shields.io/badge/go-%20docs-488AC7.svg?style=for-the-badge)](https://pkg.go.dev/github.com/kataras/methodoverride)
 
 The use of specific custom HTTP headers such as X-HTTP methods override can be very handy while developing and promoting a REST API. When deploying REST API based web services, you may encounter access limitations on both the server and client sides.
 
 **Some Firewalls do not support PUT, DELETE or PATCH requests.**
 
-The `methodoverride` package is a [net/http](https://golang.org/pkg/net/http/) middleware. **It lets you use HTTP verbs such as PUT or DELETE in places where the client doesn't support it**.
+The `methodoverride` package is a [net/http](https://pkg.go.dev/net/http) middleware. **It lets you use HTTP verbs such as PUT or DELETE in places where the client doesn't support it**.
 
 ## Getting started
 
-The only requirement is the [Go Programming Language](https://golang.org/dl).
+The only requirement is the [Go Programming Language](https://go.dev/dl/).
 
 ```sh
 $ go get github.com/kataras/methodoverride
@@ -72,10 +72,6 @@ fetch("/path", {
  })).catch((err)=> { console.error(err) })
 ```
 
-## Stargazers over time
-
-[![Stargazers over time](https://starchart.cc/kataras/methodoverride.svg)](https://starchart.cc/kataras/methodoverride)
-
 ## License
 
-`methodoverride` is free and open-source software licensed under the [MIT License](https://tldrlegal.com/license/mit-license).
+Methodoverride is free and open-source software licensed under the [MIT License](https://tldrlegal.com/license/mit-license).

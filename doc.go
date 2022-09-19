@@ -5,13 +5,13 @@ Source code and other details for the project are available at GitHub:
 
 Current Version
 
-0.0.1
+0.0.2
 
 Installation
 
-The only requirement is the Go Programming Language
+The only requirement is the Go Programming Language:
 
-    $ go get -u github.com/kataras/methodoverride
+    $ go get github.com/kataras/methodoverride
 
 */
 
